@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hotel Management System</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#rooms">Rooms</a></li>
+				<li><a href="#booking">Booking</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<main>
+		<section id="home">
+			<h1>Welcome to Hotel Management System</h1>
+			<p>This system allows you to manage hotel rooms, bookings, and customer information.</p>
+		</section>
+		
+		<section id="rooms">
+			<h1>Rooms</h1>
+			<table id="rooms-table">
+				<thead>
+					<tr>
+						<th>Room Number</th>
+						<th>Room Type</th>
+						<th>Price</th>
+						<th>Status</th>
+					</tr>
+				</thead>
+				<tbody id="rooms-tbody">
+					<!-- rooms will be displayed here -->
+				</tbody>
+			</table>
+			<button id="add-room-btn">Add Room</button>
+		</section>
+		
+		<section id="booking">
+			<h1>Booking</h1>
+			<form id="booking-form">
+				<label for="room-number">Room Number:</label>
+				<input type="text" id="room-number" required>
+				<label for="customer-name">Customer Name:</label>
+				<input type="text" id="customer-name" required>
+				<label for="check-in">Check-in Date:</label>
+				<input type="date" id="check-in" required>
+				<label for="check-out">Check-out Date:</label>
+				<input type="date" id="check-out" required>
+				<button id="book-btn">Book Room</button>
+			</form>
+		</section>
+		
+		<section id="contact">
+			<h1>Contact Us</h1>
+			<p>For any queries or feedback, please contact us at <a href="mailto:hotel@example.com">hotel@example.com</a></p>
+		</section>
+	</main>
+	
+	<script src="script.js"></script>
+</body>
+</html>
